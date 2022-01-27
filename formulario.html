@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="formulario.html">Contacto</a>
+    </div>
+    <h1 class="titulo">Contacto</h1>
+    <form action="/formulario.html" method="get">
+
+        <label for="Campo">Nombre</label><br>
+        <input type="text" name="Nombre" id="Campo" placeholder="Nombre completo"> <br>
+        
+        <label for="Campo">Correo Electronico</label><br>
+        <input type="email" name="Correo" id="Campo" placeholder="ej. user@gmail.com"> <br>
+        
+        <div class="Genero">
+            <label for="">Genero</label><br>
+            <input type="radio" name="Genero" id="radio" value="femenino">
+            <label for="radio">Femenino</label>
+        
+       
+            <input type="radio" name="Genero" id="radio" value="Masculino">
+            <label for="radio">Masculino</label>
+        </div>
+        <br>
+        <label for="Campo">Contraseña</label><br>
+        <input type="password" name="Contrasenia" id="Campo" placeholder="8 a 16 caracteres">
+        <br>
+        <label for="Campo">Comentario</label> <br>
+        <textarea name="Comentario" id="Campo" cols="30" rows="5"></textarea>
+        
+        <br>
+        <label for="Ciudad" id="Selec">Ciudad</label>
+        <select name="Ciudad" id="Ciudad">
+            <option value="GDL" selected>Guadalajara</option>
+            <option value="TLQ"> Tlaquepaque</option>
+            <option value="TON">Tonalá</option>
+            <option value="ZAP">Zapopan</option>
+            <option value="TLAJ">Tlajomulco</option>
+            <option value="SAL">El Salto</option>
+            <option value="ZAPJ">Zapotlanejo</option>
+        </select>
+        <br>
+        <input type="checkbox" name="Int" id="Check">
+        <label for="Check" class="Check">Me interesa contratarte</label>
+        <br>
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
